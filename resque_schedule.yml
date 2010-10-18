@@ -1,0 +1,5 @@
+sample:
+  cron: */5 * * * *
+  class: SampleTask
+  description: Sample task every 5 minutes
+
