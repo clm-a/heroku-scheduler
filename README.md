@@ -3,8 +3,7 @@ using [Resque Scheduler](http://github.com/bvandenbos/resque-scheduler/) on Hero
 
 Works on bambo-ree-1.8.7 and bamboo-mri-1.9.2
 
-All you need is to put some classes' skeleton into jobs folder (see _jobs/sample.rb_),
-to schedule your tasks in _resque\_schedule.yml_, to deploy and define these ENV vars
+All you need is to schedule your tasks in _resque\_schedule.yml_, to deploy and define these ENV vars
 (using _[heroku config ...](http://docs.heroku.com/config-vars)_) :
 
 * RESQUEWEB_LOGIN (to connect to the resque-web utility)
@@ -20,4 +19,3 @@ I extracted this from the coming soon release of **[SubMate](http://www.submate.
 frequent tasks that Heroku's default cron can't handle.
 
 Don't hesitate to contact me for any question or request !
-
