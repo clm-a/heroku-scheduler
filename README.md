@@ -1,3 +1,13 @@
+**UPDATE** : This is quite obsolete since Cedar Stack on Heroku allows you to declare distinct task for each worker you start :
+```
+    web:        bundle exec rails server -p $PORT
+    scheduler:  bundle exec rake resque:scheduler
+    worker:     bundle exec rake jobs:work
+http://devcenter.heroku.com/articles/procfile
+
+------
+
+
 **RemoteScheduler** allows you to drive distant Heroku app workers, scheduling their tasks,
 using [Resque Scheduler](http://github.com/bvandenbos/resque-scheduler/) on Heroku.
 
